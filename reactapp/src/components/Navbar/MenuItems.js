@@ -1,7 +1,7 @@
 export const MenuItems = [
     {
         title: 'Home',
-        url: 'reactapp/src/components/Mainpage/main.js',
+        url: '../../pages/main.js',
         cName: 'nav-links'
     },
     {

@@ -1,0 +1,43 @@
+.big-header {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.main-text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.filebox label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #6d76f7;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.upload-name {
+    display: inline-block;
+    height: 40px;
+    padding: 0 10px;
+    vertical-align: middle;
+    border: 1px solid #dddddd;
+    width: 500px;
+    color: #999999;
+    position: relative;
+    margin-left: 440px;
+    margin-top: 50px;
+}
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
