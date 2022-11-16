@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import './main.css'
 import axios from "axios"
 
-function handleFileInput(e, setFile) {
+function handleFileInput(e, setFile, setFileName) {
     setFile(e.target.files[0])
+    setFileName(e.target.files[0].name)
     console.log(e.target.files[0])
 }
 
@@ -12,7 +13,7 @@ function handlePost(image, video) {
     formData.append('image', image);
     formData.append('video', video);
 
-    axios.post("http://3.34.44.236:9000/api/upload",
+    axios.post("http://54.180.122.160:9000/api/upload",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
     ).then(res => {
@@ -25,13 +26,22 @@ function handlePost(image, video) {
 function Fileinput() {
     const [image, setImage] = useState();
     const [video, setVideo] = useState();
-
+    const [vidName, setVidName] = useState();
+    const [imgName, setImgName] = useState();
 
     return (
         <div className="filebox">
-            <p><input type="file" id="file" onChange={e => handleFileInput(e, setImage)} /></p>
-            <p><input type="file" id="file" onChange={e => handleFileInput(e, setVideo)} /></p>
-            <p><button type="button" onClick={() => handlePost(image, video)}>Upload</button></p>
+            <p>
+                <input className="upload-name" placeholder="첨부파일" defaultValue={vidName || ""} />
+                <label htmlFor='vid-file'>동영상 찾기</label>
+                <input type="file" id="vid-file" onChange={e => handleFileInput(e, setVideo, setVidName)} />
+            </p>
+            <p>
+                <input className="upload-name" placeholder="첨부파일" defaultValue={imgName || ""} />
+                <label htmlFor='img-file'>사진 찾기</label>
+                <input type="file" id="img-file" onChange={e => handleFileInput(e, setImage, setImgName)} />
+            </p>
+            <p><button type="button" className='btn-submit' onClick={() => handlePost(image, video)}>Upload</button></p>
         </div>
     );
 }

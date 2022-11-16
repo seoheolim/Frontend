@@ -8,17 +8,6 @@
     margin-top: 50px;
 }
 
-.filebox label {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    vertical-align: middle;
-    background-color: #6d76f7;
-    cursor: pointer;
-    height: 40px;
-    margin-left: 10px;
-    margin-top: 50px;
-}
 
 .upload-name {
     display: inline-block;
@@ -33,11 +22,26 @@
     margin-top: 50px;
 }
 
-.filebos input[type="file"] {
-    position: absolute;
-    width: 0;
-    height: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
+.filebox label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #6568f4;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+#vid-file{
+    display: none;
+}
+
+#img-file{
+    display: none;
+}
+
+.btn-submit{
+    
 }
