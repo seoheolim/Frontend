@@ -32,12 +32,13 @@ function exceptPerson(e, setStatus) {
     console.log(e.target.checked)
 }
 
-function handlePost(image, video, email) {
+function handlePost(image, video, status, email) {
     const formData = new FormData();
     formData.append('image', image);
     formData.append('video', video);
+    formData.append('option', status);
     formData.append('email', email);
-    axios.post("http://54.180.122.160:9000/api/upload",
+    axios.post("http://54.180.220.9/api/upload",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
     ).then(res => {
@@ -75,10 +76,10 @@ function Fileinput() {
                 <br />
                 대상을 제외하고 모자이크<input type="checkbox" className='btn-checkbox' onClick={e => exceptPerson(e, setStatus)}></input>
             </p>
-            
+
             <h4 className='main-text'>결과물을 받을 이메일을 입력해주세요!</h4>
             <p className='align-center'>
-                
+
                 <br />
                 <br />
 
@@ -86,7 +87,7 @@ function Fileinput() {
                 <input className="email-input" placeholder="E-Mail을 입력해주세요" type="text" onChange={e => handleEmailInput(e, setEmail)}></input>
             </p>
 
-            <p className='align-center'><button id="btn-submit" type="button" onClick={() => handlePost(image, video, email, status)}>제출하기</button></p>
+            <p className='align-center'><button id="btn-submit" type="button" onClick={() => handlePost(image, video, status, email)}>제출하기</button></p>
         </div>
     );
 }
