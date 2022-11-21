@@ -1,5 +1,5 @@
 import React from 'react'
-import './main.css'
+import '../main.css'
 
 
 function handleFileInput(e, setFile, setFileName) {
@@ -12,7 +12,7 @@ function Fileinput(props) {
 
     return (
         <div className="filebox" id='align-center'>
-            <input className="upload-name" placeholder="첨부파일" defaultValue={props.fileName || ""} />
+            <input className="upload-name" placeholder="첨부파일" defaultValue={props.fileName || ""} onKeyDown={(event) => { event.preventDefault(); }} />
             <label htmlFor={props.fileId}>{props.fileType} 찾기</label>
             <input type="file" id={props.fileId} onChange={e => handleFileInput(e, props.setFile, props.setFileName)} />
         </div>

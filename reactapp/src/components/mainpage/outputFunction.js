@@ -1,5 +1,5 @@
 import React from 'react'
-import './main.css'
+import '../main.css'
 import axios from "axios"
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import './main.css'
+import '../main.css'
 
 function onlyPerson(e, setStatus) {
     if (e.target.checked) {

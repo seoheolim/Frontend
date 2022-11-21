@@ -6,6 +6,8 @@
 
 .main-text {
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -34,15 +36,15 @@
 }
 
 
-#vid-file{
+#vid-file {
     display: none;
 }
 
-#img-file{
+#img-file {
     display: none;
 }
 
-#btn-submit{
+#btn-submit {
     margin-top: 30px;
     margin-bottom: 200px;
     display: inline-block;
@@ -64,13 +66,13 @@
     position: relative;
 }
 
-#align-center{
+#align-center {
     text-align: center;
 }
 
-#need-space{
+#need-space {
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .btn-checkbox {
@@ -79,5 +81,12 @@
 }
 
 input[type=checkbox] {
-    transform : scale(1.5);
+    transform: scale(1.5);
+}
+
+.email-warning{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
 }
