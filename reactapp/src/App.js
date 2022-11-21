@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar/Navbar';
-import Mainpage from './components/main';
+import Mainpage from './components/main_test';
+import inputFile from './components/inputFunction';
 import './App.css';
 
 function App() {
