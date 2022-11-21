@@ -14,7 +14,9 @@ class Mainpage extends Component {
                 <h4 className='main-text'>
                     모자이크 처리하고 싶은 영상과 대상의 얼굴 사진을 올려주세요
                 </h4>
-                <p><br /><Fileinput /></p>
+                <p><br />
+                    <Fileinput></Fileinput>
+                </p>
 
 
 

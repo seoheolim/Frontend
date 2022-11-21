@@ -22,6 +22,7 @@ function handlePost(image, video) {
     }).catch(err => {
         alert('Failed')
     })
+    return (formData)
 }
 
 function Fileinput() {
@@ -51,3 +52,4 @@ function Fileinput() {
 }
 
 export default Fileinput;
+
