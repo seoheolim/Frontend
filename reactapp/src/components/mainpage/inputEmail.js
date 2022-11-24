@@ -11,7 +11,6 @@ const handleEmailInput = (e, setEmail) => {
 
 }
 
-
 function EmailInput(props) {
 
     return (

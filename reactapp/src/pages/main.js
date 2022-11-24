@@ -31,7 +31,8 @@ function Home() {
             </h4>
             <EmailInput setEmail={setEmail} />
 
-            {status && <p className='email-warning'>이메일을 올바르게 입력했습니다</p>}
+            
+            {email && <p className='email-warning'>이메일을 올바르게 입력했습니다</p>}
             <br /><br /><br />
 
 

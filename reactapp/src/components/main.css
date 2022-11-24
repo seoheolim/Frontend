@@ -84,9 +84,23 @@ input[type=checkbox] {
     transform: scale(1.5);
 }
 
-.email-warning{
+.email-warning {
     color: red;
     font-weight: bold;
     text-align: center;
     margin-top: 5px;
+}
+
+.explain-text {
+    line-height: 2.5;
+    text-align: left;
+}
+
+.explain-content {
+    line-height: 2.5;
+    text-align: center;
+}
+
+.image {
+    border: 2px solid black;
 }
