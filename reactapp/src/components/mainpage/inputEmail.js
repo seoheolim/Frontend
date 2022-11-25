@@ -1,12 +1,14 @@
 import React from 'react'
 import '../main.css'
-import HandleEmailInput2 from './handleEmail';
 
 const handleEmailInput = (e, setEmail) => {
     const regex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+.com$/;
     if (regex.test(e.target.value)) {
         setEmail(e.target.value)
         console.log(e.target.value)
+    }
+    else {
+        setEmail("")
     }
 
 }

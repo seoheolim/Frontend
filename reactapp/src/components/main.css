@@ -46,13 +46,13 @@
 
 #btn-submit {
     margin-top: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
     display: inline-block;
-    padding: 10px 20px;
     color: #fff;
     background-color: #6568f4;
     cursor: pointer;
     height: 40px;
+    width: 80px;
 }
 
 .email-input {
@@ -84,8 +84,7 @@ input[type=checkbox] {
     transform: scale(1.5);
 }
 
-.email-warning {
-    color: red;
+.email-alarm {
     font-weight: bold;
     text-align: center;
     margin-top: 5px;
@@ -103,4 +102,8 @@ input[type=checkbox] {
 
 .image {
     border: 2px solid black;
+}
+
+.loader {
+    text-align: center;
 }

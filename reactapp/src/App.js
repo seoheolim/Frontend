@@ -5,6 +5,7 @@ import './App.css';
 import Home from "./pages/main";
 import Services from "./pages/services";
 import HowTo from "./pages/howTo";
+import Success from "./pages/success";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/howto" element={<HowTo />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/success" element={<Success />} />
         </Routes>
       </Router>
 

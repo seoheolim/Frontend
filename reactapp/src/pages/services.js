@@ -33,6 +33,10 @@ const Services = () => {
 
       <img className="image" src={output} alt="output.jpg" width={"600px"} style={{ margin: "auto", marginBottom: "50px"}} /><br />
 
+      <h3 className="explain-content" style={{ marginTop: "10px"}}>
+        앞으로 단순 모자이크 뿐만 아니라 아바타 입히기, 눈만 가리기, 등의 기능도 추가될 예정이니, 많은 관심 부탁드립니다 :)
+      </h3>
+
     </div>
   )
 };

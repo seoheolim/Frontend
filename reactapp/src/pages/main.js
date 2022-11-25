@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Navigate } from 'react-router-dom';
 import '../components/main.css'
 import FileInput from '../components/mainpage/inputFile'
 import EmailInput from '../components/mainpage/inputEmail'
@@ -10,6 +11,7 @@ function Home() {
     const [video, setVideo] = useState();
     const [email, setEmail] = useState();
     const [status, setStatus] = useState("");
+    const [sendState, setSendState] = useState(2)
 
     const [vidName, setVidName] = useState();
     const [imgName, setImgName] = useState();
@@ -31,14 +33,21 @@ function Home() {
             </h4>
             <EmailInput setEmail={setEmail} />
 
-            
-            {email && <p className='email-warning'>이메일을 올바르게 입력했습니다</p>}
+
+            {email && <p className='email-alarm' style={{ color: "blue" }}>이메일을 올바르게 입력했습니다</p>}
+            {email === "" && <p className='email-alarm' style={{ color: "red" }}>이메일 형식을 확인해주세요</p>}
+
             <br /><br /><br />
 
 
             <OptionInput setStatus={setStatus}></OptionInput>
             <br /><br />
-            <FileOutput image={image} video={video} email={email} status={status}></FileOutput>
+            <FileOutput image={image} video={video} email={email} status={status} setSendState={setSendState}></FileOutput>
+
+            {sendState === 1 && <Navigate to='/success' />}
+            {sendState === 0 && <h4 style={{color: "red", textAlign: "center", marginBottom: "150px"}}>
+                제출에 실패했습니다. 파일과 정보를 확인해주세요
+                </h4>}
 
         </div>
     )
