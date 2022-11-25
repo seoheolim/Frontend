@@ -4,7 +4,10 @@
 
 ## Introduction
 
-    서강대학교 인공지능 캡스톤 디자인 HIDE 프로젝트 frontend 구현 repository입니다. 간략하게 프로젝트 설명을 하자면, project HIDE는 "Human Identification and Detection for Erasing"의 약자로, 영상 속 인물을 자동으로 모자이크 처리해주는 서비스 구현이 목적입니다. 
+    서강대학교 인공지능 캡스톤 디자인 HIDE 프로젝트 frontend 구현 repository입니다. 
+    간략하게 프로젝트 설명을 하자면, project HIDE는 "Human Identification and Detection
+    for Erasing"의 약자로, 영상 속 인물을 자동으로 모자이크 처리해주는 서비스 구현이
+    목적입니다. 
 
 
 </br>
