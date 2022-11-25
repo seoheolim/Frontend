@@ -2,7 +2,7 @@ import React from "react";
 import service_archi from "./images/architecture.png"
 import output from "./images/output.png"
 
-const Services = () => {
+const About = () => {
   return (
     <div className="big-header">
       <h1>
@@ -41,4 +41,4 @@ const Services = () => {
   )
 };
 
-export default Services;
+export default About;
