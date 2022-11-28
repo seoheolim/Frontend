@@ -6,6 +6,8 @@
 
 .main-text {
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -34,23 +36,23 @@
 }
 
 
-#vid-file{
+#vid-file {
     display: none;
 }
 
-#img-file{
+#img-file {
     display: none;
 }
 
-#btn-submit{
+#btn-submit {
     margin-top: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
     display: inline-block;
-    padding: 10px 20px;
     color: #fff;
     background-color: #6568f4;
     cursor: pointer;
     height: 40px;
+    width: 80px;
 }
 
 .email-input {
@@ -64,13 +66,13 @@
     position: relative;
 }
 
-.align-center{
+#align-center {
     text-align: center;
 }
 
-#need-space{
+#need-space {
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .btn-checkbox {
@@ -79,5 +81,29 @@
 }
 
 input[type=checkbox] {
-    transform : scale(1.5);
+    transform: scale(1.5);
+}
+
+.email-alarm {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.explain-text {
+    line-height: 2.5;
+    text-align: left;
+}
+
+.explain-content {
+    line-height: 2.5;
+    text-align: center;
+}
+
+.image {
+    border: 2px solid black;
+}
+
+.loader {
+    text-align: center;
 }
