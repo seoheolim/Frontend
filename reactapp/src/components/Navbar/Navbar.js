@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Button } from '../Button'
 import { MenuItems } from './MenuItems'
 import './Navbar.css'
 
@@ -13,7 +12,9 @@ class Navbar extends Component {
     render() {
         return (
             <nav className='NavbarItems'>
-                <h1 className="navbar-logo">HIDE <i className='fa-solid fa-binoculars'></i></h1>
+                <h1 className="navbar-logo">
+                    <a style={{ color: "white", textDecoration: "none" }} href="/">HIDE</a> <i className='fa-solid fa-binoculars'></i>
+                </h1>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
@@ -25,7 +26,6 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-                <Button>Sign Up</Button>
             </nav>
         )
     }
