@@ -40,7 +40,7 @@ function Home() {
             <br /><br /><br />
 
 
-            <OptionInput setStatus={setStatus}></OptionInput>
+            <OptionInput setStatus={setStatus}> status={status}</OptionInput>
             <br /><br />
             <FileOutput image={image} video={video} email={email} status={status} setSendState={setSendState}></FileOutput>
 
