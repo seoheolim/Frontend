@@ -27,7 +27,11 @@ function Home() {
             <FileInput fileType={"영상"} setFile={setVideo} setFileName={setVidName} fileName={vidName} fileId={"vid-file"} />
             <FileInput fileType={"사진"} setFile={setImage} setFileName={setImgName} fileName={imgName} fileId={"img-file"} />
 
+            <br /><br />
+
+            <OptionInput setStatus={setStatus}> status={status}</OptionInput>
             <br /><br /><br />
+
             <h4 className='main-text'>
                 편집된 영상을 받을 이메일을 입력해주세요
             </h4>
@@ -37,18 +41,15 @@ function Home() {
             {email && <p className='email-alarm' style={{ color: "blue" }}>이메일을 올바르게 입력했습니다</p>}
             {email === "" && <p className='email-alarm' style={{ color: "red" }}>이메일 형식을 확인해주세요</p>}
 
-            <br /><br /><br />
-
-
-            <OptionInput setStatus={setStatus}> status={status}</OptionInput>
             <br /><br />
+
             <FileOutput image={image} video={video} email={email} status={status} setSendState={setSendState}></FileOutput>
 
             {sendState === 1 && <Navigate to='/success' />}
-            {sendState === 0 && <h4 style={{color: "red", textAlign: "center", marginBottom: "150px"}}>
+            {sendState === 0 && <h4 style={{ color: "red", textAlign: "center", marginBottom: "150px" }}>
                 제출에 실패했습니다. 파일과 정보를 확인해주세요
-                </h4>}
-
+            </h4>}
+            <br /><br />
         </div>
     )
 }
